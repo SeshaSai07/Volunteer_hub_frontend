@@ -565,7 +565,7 @@ tr:hover td {
 .empty-state-icon {
   font-size: 4rem;
   margin-bottom: 1rem;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .empty-state p {
