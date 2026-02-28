@@ -24,6 +24,8 @@ import NotificationsPage from './pages/NotificationsPage';
 import MessagesPage from './pages/MessagesPage';
 import GroupsPage from './pages/GroupsPage';
 import PostOpportunityPage from './pages/PostOpportunityPage';
+import PostResourcePage from './pages/PostResourcePage';
+import OrgVolunteersPage from './pages/organization/OrgVolunteersPage';
 
 // Admin pages
 import AdminDashboard from './pages/admin/AdminDashboard';
@@ -66,7 +68,9 @@ function AppInner() {
           <Route path="/notifications" element={<ProtectedRoute><NotificationsPage /></ProtectedRoute>} />
           <Route path="/messages" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
           <Route path="/groups" element={<ProtectedRoute><GroupsPage /></ProtectedRoute>} />
-          <Route path="/post-opportunity" element={<ProtectedRoute><PostOpportunityPage /></ProtectedRoute>} />
+          <Route path="/post-opportunity" element={<ProtectedRoute orgOrAdminOnly><PostOpportunityPage /></ProtectedRoute>} />
+          <Route path="/post-resource" element={<ProtectedRoute orgOrAdminOnly><PostResourcePage /></ProtectedRoute>} />
+          <Route path="/org/volunteers" element={<ProtectedRoute orgOrAdminOnly><OrgVolunteersPage /></ProtectedRoute>} />
 
           {/* Admin */}
           <Route path="/admin" element={<ProtectedRoute adminOnly><AdminDashboard /></ProtectedRoute>} />
