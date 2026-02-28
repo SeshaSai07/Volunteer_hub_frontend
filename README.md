@@ -49,7 +49,7 @@ VolunteerHub is a modern web application designed to connect passionate voluntee
    Navigate to the URL provided in the terminal (usually `http://localhost:5173`).
 
 ## 🌐 Deployment Link
-*To be added / updated upon frontend deployment*
+https://volunteerhub0607.netlify.app/
 
 ### Deploying to Netlify
 This repository is pre-configured for seamless deployment to Netlify! A `netlify.toml` file is already included with the necessary build commands and routing rules.
