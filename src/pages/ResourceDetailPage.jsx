@@ -28,7 +28,7 @@ const ResourceDetailPage = () => {
                     By {resource.profiles?.full_name || 'VolunteerHub'}
                 </p>
                 <div className="divider" />
-                <div style={{ marginTop: '1.5rem', lineHeight: 1.9, color: 'rgba(255,255,255,0.85)', whiteSpace: 'pre-wrap' }}>
+                <div style={{ marginTop: '1.5rem', lineHeight: 1.9, color: 'var(--text)', whiteSpace: 'pre-wrap' }}>
                     {resource.content}
                 </div>
             </div>
