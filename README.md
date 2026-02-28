@@ -77,6 +77,8 @@ https://api-volunteer-opportunity-hub-backend.onrender.com
 
 ## 📸 Screenshots
 *(Add screenshots of the application here showing the Dashboard, Opportunities, and Calendar)*
+![Screenshot](https://i.ibb.co/dsbnv2WS/Screenshot-2026-02-28-224050.png)
+
 
 ## 🎥 Video Walkthrough Link
 *(Add link to video walkthrough here)*
