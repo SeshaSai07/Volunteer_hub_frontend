@@ -21,6 +21,7 @@
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --navbar-bg: rgba(10, 12, 20, 0.88);
   --footer-bg: #060910;
+  --bg-input-option: #1a1f2e;
 }
 
 /* ── Light / LinkedIn theme ── */
@@ -43,6 +44,7 @@
   --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --navbar-bg: rgba(255, 255, 255, 0.98);
   --footer-bg: #fff;
+  --bg-input-option: #fff;
 }
 
 /* Light mode — body background */
@@ -337,7 +339,8 @@ body {
 }
 
 select.form-control option {
-  background: #1a1f2e;
+  background: var(--bg-input-option);
+  color: var(--text);
 }
 
 textarea.form-control {
