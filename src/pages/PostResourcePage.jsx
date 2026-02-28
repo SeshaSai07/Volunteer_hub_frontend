@@ -9,8 +9,7 @@ const CATEGORIES = ['education', 'environment', 'health', 'community', 'animals'
 const PostResourcePage = () => {
     const navigate = useNavigate();
     const [form, setForm] = useState({
-        title: '', content: '', category: 'general',
-        external_link: '', related_opportunity_id: ''
+        title: '', content: '', category: 'general'
     });
     const [loading, setLoading] = useState(false);
 
@@ -48,16 +47,6 @@ const PostResourcePage = () => {
                     <div className="form-group">
                         <label>Content</label>
                         <textarea className="form-control" placeholder="Provide helpful information or instructions..." value={form.content} onChange={f('content')} required rows={6} />
-                    </div>
-
-                    <div className="form-group">
-                        <label>External Link <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>(Optional)</span></label>
-                        <input className="form-control" type="url" placeholder="https://example.com/guide" value={form.external_link} onChange={f('external_link')} />
-                    </div>
-
-                    <div className="form-group">
-                        <label>Related Opportunity ID <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>(Optional)</span></label>
-                        <input className="form-control" placeholder="UUID of an existing opportunity" value={form.related_opportunity_id} onChange={f('related_opportunity_id')} />
                     </div>
 
                     <button type="submit" className="btn btn-primary" disabled={loading} style={{ marginTop: '1rem' }}>
