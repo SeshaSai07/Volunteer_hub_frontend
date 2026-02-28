@@ -41,6 +41,10 @@ const Navbar = () => {
         { to: '/dashboard', icon: <Clock size={14} />, label: 'My Hours' },
     ];
 
+    if (role === 'organization') {
+        profileMenuItems.push({ to: '/org/volunteers', icon: <Users size={14} />, label: 'Track Volunteers' });
+    }
+
     return (
         <nav className="navbar">
             <div className="navbar-container">
@@ -58,9 +62,14 @@ const Navbar = () => {
                     {user ? (
                         <>
                             {(role === 'organization' || role === 'admin') && (
-                                <NavLink to="/post-opportunity" className="nav-link nav-link-accent" onClick={() => setOpen(false)}>
-                                    + Post
-                                </NavLink>
+                                <>
+                                    <NavLink to="/post-opportunity" className="nav-link nav-link-accent" onClick={() => setOpen(false)}>
+                                        + Opp
+                                    </NavLink>
+                                    <NavLink to="/post-resource" className="nav-link nav-link-accent" onClick={() => setOpen(false)}>
+                                        + Res
+                                    </NavLink>
+                                </>
                             )}
                             {role === 'admin' && (
                                 <NavLink to="/admin" className="nav-link nav-link-admin" onClick={() => setOpen(false)}>
